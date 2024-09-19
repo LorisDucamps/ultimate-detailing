@@ -1,5 +1,7 @@
 <template>
   <div>
-    <h1>Ultimate Detailing</h1>
+    <Heading level="1">
+      Ultimate Detailing
+    </Heading>
   </div>
 </template>
