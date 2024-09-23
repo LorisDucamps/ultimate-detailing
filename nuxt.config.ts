@@ -44,6 +44,12 @@ export default {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
 
+  runtimeConfig: {
+    public: {
+      strapiBaseUrl: process.env.STRAPI_BASE_URL || 'http://localhost:1337', // Default URL if none provided
+    }
+  },
+
   compatibilityDate: '2024-09-19',
   devtools: { enabled: true }
 };
