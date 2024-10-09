@@ -1,5 +1,17 @@
+<!-- url racine -->
+
 <template>
     <div>
-      <h1>Bienvenue sur la page d'accueil</h1>
+      <Heading level="1">
+      Ultimate Detailing
+    </Heading>
+    <p>Voici un contenu très explicite</p>
     </div>
   </template>
+
+<script setup>
+
+definePageMeta({
+  title: 'Voici un super titre de page PAGE'
+})
+</script>

@@ -3,19 +3,6 @@ export default {
   // ou 'server' si vous avez besoin de SSR
   target: 'server',
 
-  // Metadonnées pour les balises head de chaque page
-  head: {
-    title: 'Ultimate Detailing',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Votre site de detailing automobile ultime' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
-  },
-
   // Global CSS (chargement global de CSS)
   css: [
     // 'path/to/global/styles.css'
@@ -33,6 +20,17 @@ export default {
   // Auto-importation des composants dans `components/`
   components: true,
 
+  
+  buildModules: ['@nuxtjs/google-analytics'],
+
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID
+    }
+  },
+
+  plugins: [{ src: '~/plugins/googleAnalytics.js', mode: 'client' }],
+
   // Configuration du serveur
   server: {
     port: 3000, // Définit le port du serveur
@@ -46,10 +44,10 @@ export default {
 
   runtimeConfig: {
     public: {
-      strapiBaseUrl: process.env.STRAPI_BASE_URL || 'http://localhost:1337', // Default URL if none provided
+      strapiBaseUrl: process.env.STRAPI_BASE_URL || 'http://localhost:1337',
     }
   },
 
-  compatibilityDate: '2024-09-19',
+  compatibilityDate: '2024-09-23',
   devtools: { enabled: true }
 };
