@@ -1,4 +1,7 @@
 <template>
+
+</template>
+<!-- <template>
   <div v-if="post">
     <h1>{{ post.title }}</h1>
   </div>
@@ -31,4 +34,4 @@ useSeoMeta({
 
 <style>
 
-</style>
+</style> -->

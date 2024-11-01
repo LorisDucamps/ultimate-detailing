@@ -1,7 +1,7 @@
 export default {
   // Définir le mode du projet (server-side rendering ou statique)
   // ou 'server' si vous avez besoin de SSR
-  target: 'server',
+  target: 'static',
 
   // Global CSS (chargement global de CSS)
   css: [

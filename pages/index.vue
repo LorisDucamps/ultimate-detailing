@@ -1,12 +1,11 @@
-<!-- url racine -->
-
 <template>
-    <div>
+  <Navigation/>
+    <main>
       <Heading level="1">
       Ultimate Detailing
     </Heading>
     <p>Voici un contenu très explicite</p>
-    </div>
+    </main>
   </template>
 
 <script setup>

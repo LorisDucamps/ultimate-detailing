@@ -1,11 +1,11 @@
 <template>
-    <NuxtLoadingIndicator />
     <Header/>
     <NuxtPage />
 </template>
 
 
 <script setup>
+
 useHead({
   htmlAttrs: {
     lang: 'fr',
